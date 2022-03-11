@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map</title>
+</head>
+<body>
+    <img src="workplace.jpg" alt="workplace image" title="click on things in the image to know more about it" usemap="#workmap">
+    <map name="workmap">
+        <area shape="rect" coords="34,44,271,343" href="https://en.wikipedia.org/wiki/Laptop" alt="laptop" title="click to get information about the laptop" target="_blank">
+        <area shape="rect" coords="289,173,334,244" href="https://en.wikipedia.org/wiki/Smartphone" alt="Smartphone" title="click here to get information about Smartphone" target="_blank">
+        <area shape="circle" coords="339,299,45" href="https://en.wikipedia.org/wiki/Coffee" alt="Coffee" title="click here to get information about coffee" target="_blank">
+    </map>
+    <img src="croissant.jpg" alt="croissant" title="click on croissant to know more about it" usemap="#cross">
+    <map name="cross">
+        <area shape="poly" coords="181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147,140,121" href="https://en.wikipedia.org/wiki/Croissant" alt="Croissant" title="click here to get more information about croissant" target="_blank">
+    </map>
+    <img src="mac.jpeg" alt="image of mac" title="click on the screen of the mac to know more about it" usemap="#mac">
+    <map name="mac">
+        <area shape="rect" coords="112,46,321,245" href="https://en.wikipedia.org/wiki/Macintosh" alt="Macintosh"  target="_blank" title="click here to get more information about Macintosh" onclick="mymac()">
+    </map>
+    <script>
+        function mymac()
+        {
+            alert("you clicked on the mac now you can read more information about Macintosh on wikipedia")
+        }
+    </script>
+</body>
+
+</html>

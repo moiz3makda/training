@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="purchase_rate" class="control-label">Purchase Rate</label>
+            <select name="purchase_rate" id="purchase_rate" class="selectSearch" data-index="20" >
+                <option value="1" <?php echo (isset($edit_purchase_rate) && $edit_purchase_rate == 1) ? 'selected' : '' ?>>Including Tax</option>
+                <option value="2" <?php echo isset($edit_purchase_rate) ? ($edit_purchase_rate == 2) ? 'selected' : '' : 'selected' ?>>Excluding Tax</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="sales_rate" class="control-label">Sales Rate</label>
+            <select name="sales_rate" id="sales_rate" class="selectSearch" data-index="21" >
+                <option value="1" <?php echo isset($edit_sales_rate) ? ($edit_sales_rate == 1) ? 'selected' : '' : 'selected' ?>>Including Tax</option>
+                <option value="2" <?php echo (isset($edit_sales_rate) && $edit_sales_rate == 2) ? 'selected' : ''; ?>>Excluding Tax</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="form-group">
+        
+            <label for="purchase_rate" class="control-label">Purchase Rate</label>
+            <input type="text" size="8" name="purchase_rate_val" class="form-control num_only" id="purchase_rate_val" value="<?= isset($purchase_rate_val) ? $purchase_rate_val : '' ?>" data-index="22" placeholder="">
+        
+        </div>
+    </div>
+    <div class="col-md-1">
+        <div class="form-group">
+            <label for="internal_code" class="control-label">Effactive Date</label>
+            <input type="date" name="internal_code" class="form-control" id="internal_code" value="<?= isset($internal_code) ? $internal_code : '' ?>" data-index="30" placeholder="">
+        </div>
+    </div>
+    <div class="col-md-1">
+        <div class="form-group">
+            
+        <label for="internal_code" class="control-label"></label>
+            <a href="" style="text-decoration: underline">Preavious Rates</a>
+            
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="form-group">
+        
+            <label for="sales_rate_val" class="control-label">Sales Rate Value</label>
+            <input type="text" name="sales_rate_val" class="form-control num_only" id="sales_rate_val" value="<?= isset($sales_rate_val) ? $sales_rate_val : '' ?>" data-index="23" placeholder="">
+        
+        </div>
+    </div>
+   
+    <div class="col-md-1">
+        <div class="form-group">
+            <label for="internal_code" class="control-label">Effactive Date</label>
+            <input type="date" name="internal_code" class="form-control" id="internal_code" value="<?= isset($internal_code) ? $internal_code : '' ?>" data-index="30" placeholder="">
+        </div>
+    </div>
+    <div class="col-md-1">
+        <div class="form-group">
+        
+        <label for="internal_code" class="control-label"></label>
+            <a href="" style="text-decoration: underline">Preavious Rates</a>
+        
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="minimum" class="control-label">Minimum</label>
+            <input type="text" name="minimum" class="form-control num_only" id="minimum" value="<?= isset($minimum) ? $minimum : '' ?>" data-index="24" placeholder="">
+        </div>
+    </div>
+</body>
+</html>

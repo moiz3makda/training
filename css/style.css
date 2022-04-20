@@ -1,3 +1,5 @@
-#bg{
-    background-color: aqua;
+#border{
+    border-style:solid;
+    border-width: 7px;
+    border-radius: 0px 30px;
 }

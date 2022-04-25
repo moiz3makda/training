@@ -1,0 +1,16 @@
+ul{
+    list-style-type: none;
+    background-color: blue;
+    color: white;
+    overflow: auto;
+}
+
+li{
+    padding: 10px 15px;
+    float: right;
+}
+
+li:hover{
+    color: blue;
+    background-color: white;
+}

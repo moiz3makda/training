@@ -13,4 +13,5 @@ li{
 li:hover{
     color: blue;
     background-color: white;
+    font-size: larger;
 }

@@ -3,6 +3,8 @@ ul{
     background-color: blue;
     color: white;
     overflow: auto;
+    transition: color;
+    
 }
 
 li{
@@ -11,7 +13,11 @@ li{
 }
 
 li:hover{
+    font-size: large;
     color: blue;
     background-color: white;
-    font-size: larger;
+    border: 2px solid blue;
+    transition: all;
+    transition-duration: 1s;
 }
+

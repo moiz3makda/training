@@ -20,4 +20,27 @@ li:hover{
     transition: all;
     transition-duration: 300ms;
 }
+.parent{
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    
+
+}
+.child{
+    background-color: blue;
+    color: white;
+    /* margin: 10px; */
+    padding: 10px;
+}
+.child:hover{
+    font-size: large;
+    color: blue;
+    background-color: white;
+    border: 2px solid blue;
+    transition: all;
+    transition-duration: 300ms;
+}
 

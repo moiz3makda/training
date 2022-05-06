@@ -26,6 +26,7 @@ li:hover{
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
+    margin-bottom: 10px;
     
 
 }
@@ -33,7 +34,7 @@ li:hover{
     background-color: blue;
     color: white;
     /* margin: 10px; */
-    padding: 10px;
+    padding: 15px;
 }
 .child:hover{
     font-size: large;
@@ -44,3 +45,23 @@ li:hover{
     transition-duration: 300ms;
 }
 
+.gridcon{
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px 80px; 
+    justify-content: center;
+}
+#griditem{
+    padding: 10px;
+    text-align: center;
+}
+#griditem:hover{
+    font-size: large;
+    color: blue;
+    background-color: white;
+    border: 2px solid blue;
+    transition: all;
+    transition-duration: 300ms;
+}
